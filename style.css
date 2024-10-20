@@ -60,6 +60,13 @@ li {
 .imagen__post{
     width: 100%;
 }
+.card{
+    flex-wrap: 1;
+}
+
+.card-body {
+    text-align: center;
+}
 /* navbar*/
 #header {
     width: 100%;
