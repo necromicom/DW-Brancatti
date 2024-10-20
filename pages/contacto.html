@@ -3,32 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 <body id="body">
     <header id="header">
-        <nav id="navBar">
-            <img src="images/img2.jpg" alt="">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="posts.html">posts</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/img2.jpg" alt="Logo de la página"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active" href="#">Contacto</a>
+                        <a class="nav-link" href="imagenes.html">Imágenes</a>
+                        <a class="nav-link" href="posts.html">Posts</a>
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+    <main id="main">
+        <section class="main__como">
+        <h1>Como llego:</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla velit doloribus saepe ut amet quam veniam, cupiditate quia suscipit quaerat corrupti deleniti inventore architecto enim impedit, fugiat placeat perspiciatis id, soluta quas nostrum quis. Blanditiis modi temporibus illum corrupti eius veniam, explicabo necessitatibus ratione totam, perferendis accusantium suscipit cum facere reiciendis odit ullam dolorum id ducimus voluptatem. Nihil fugit eligendi molestiae, et quia veritatis similique! Dolor iusto amet odit blanditiis laborum veniam temporibus a modi esse, facilis at officiis doloribus minus neque ullam ea accusamus porro necessitatibus dolorem aliquam error ad aliquid? Culpa optio facere molestiae, aliquam non dolore minus!</p>
+        </section>
+        
+        <section class="main__form d-flex justify-content-between align-items-start flex-lg-nowrap flex-wrap gap-4">
+            <div class="main__form-map-container" style="width: 100%;">
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7044.430492053406!2d-58.39198238086559!3d-34.60185847370946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1729296293425!5m2!1ses-419!2sar" style="border:0; width: 100%; height:300px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <form class="main__form-form vstack" action="submit" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+            
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="es">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                </select><br><br>
+            
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </section>
+    
+    </main>
     <footer id="footer">
         <section class="footer__img">
-            <img src="../images/img2.jpg" alt="">
+            <img src="../images/img2.jpg" alt="Imagen del footer">
         </section>
         <section class="footer__links">
             <ul class="footer__links-ul">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="posts.html">posts</a></li>
+                <li><a href="posts.html">Posts</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
             </ul>
         </section>
@@ -40,8 +83,8 @@
                 <a href=""><i class="fa-brands fa-youtube"></i></a> 
             </section>
         </section>
-    
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
