@@ -1,0 +1,24 @@
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__form{
+    width: 100%;
+    height: 100%;
+    gap: 2%;
+}
+
+.main__form-form, .main__form-map-container{
+    flex: 1;
+    max-width: 48%;
+    min-width: 300px;
+}
+@media (max-width: 992px) {
+    .main__form-map-container,
+    .main__form-form {
+        max-width: 100%;
+    }
+}
+
