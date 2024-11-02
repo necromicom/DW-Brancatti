@@ -63,6 +63,24 @@ li {
     max-width: 100%;
   }
 }
+.main__post {
+  width: 100%;
+  height: 100%;
+}
+.main__post h2 {
+  align-self: center;
+}
+
+.main__crear {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__crear button {
+  width: 10vw;
+}
+
 #footer {
   width: 100%;
   height: 60px;
@@ -85,31 +103,6 @@ li {
   display: flex;
 }
 
-.rotate-center {
-  -webkit-animation: rotate-center 0.6s ease-in 2s both;
-  animation: rotate-center 0.6s ease-in 2s both;
-}
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 #body {
   display: flex;
   flex-direction: column;

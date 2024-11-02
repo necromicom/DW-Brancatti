@@ -22,3 +22,20 @@
     }
 }
 
+.main__post{
+    width: 100%;
+    height: 100%;
+
+    h2{
+        align-self: center;
+    }
+}
+.main__crear{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        width: 10vw;
+    }
+}
