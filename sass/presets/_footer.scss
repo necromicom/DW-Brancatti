@@ -1,0 +1,20 @@
+#footer {
+    width: 100%;
+    height: 60px;
+    margin-top: auto;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer__img img {
+    width: 80px;
+    display: flex;
+
+}

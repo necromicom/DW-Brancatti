@@ -1,0 +1,16 @@
+@import "presets/reset";
+@import "presets/header";
+@import "presets/main";
+@import "presets/footer";
+
+@import "index";
+
+
+.card{
+    flex-wrap: 1;
+}
+
+.card-body {
+    text-align: center;
+}
+/*No se donde ponerlo lo de arriba*/
