@@ -30,8 +30,11 @@ li {
 }
 
 .navbar-brand img {
-  width: 5rem;
+  width: 4rem;
+  max-width: 100%;
   align-items: center;
+  height: 4rem;
+  max-height: 100%;
 }
 
 .container-fluid {
@@ -81,6 +84,19 @@ li {
   width: 10vw;
 }
 
+.card {
+  flex-wrap: 1;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.main__posts-post h3 {
+  display: flex;
+  justify-content: center;
+}
+
 #footer {
   width: 100%;
   height: 60px;
@@ -124,15 +140,5 @@ li {
 .imagen__post {
   width: 100%;
 }
-
-.card {
-  flex-wrap: 1;
-}
-
-.card-body {
-  text-align: center;
-}
-
-/*No se donde ponerlo lo de arriba*/
 
 /*# sourceMappingURL=style.css.map */
